@@ -1,0 +1,16 @@
+{
+  "name": "dist",
+  "version": "1.0.0",
+  "description": "a RPS game",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "Minenhle",
+  "license": "ISC",
+  "homepage": "https://MinenhleSolson.github.io/RPS",
+  "dependencies": {
+    "gh-pages": "^2.2.0",
+    "git": "^0.1.5"
+  }
+}
