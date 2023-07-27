@@ -6,6 +6,8 @@
   "scripts": {
     "deploy": "gh-pages -d dist"
   },
+
+  
   "author": "Minenhle",
   "license": "ISC",
   "homepage": "https://MinenhleSolson.github.io/RPS",
