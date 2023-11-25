@@ -6,7 +6,7 @@ function rpsGame(yourChoice) {
     console.log('computer Choice:', compChoice)
     result = decideWinner(humanChoice, compChoice)
     console.log(result)
-    message = finalMessage(result);//{'message':'YOU WON' 'color': 'Green'}
+    message = finalMessage(result);//{'message':'YOU WON!!' 'color': 'Green'}
     console.log(message)
     rspFrontEnd(yourChoice.id, compChoice, message,)//
 }
