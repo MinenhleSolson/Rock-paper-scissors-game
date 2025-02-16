@@ -24,11 +24,13 @@ function rpsGame(yourChoice) {
     var rpsDataBase = {
       'rock1': {'scissors1': 1, 'rock1': 0.5, 'paper1': 0},
       'paper1': {'rock1': 1, 'paper1': 0.5, 'scissors1': 0},
+       
       'scissors1': {'paper1': 1, 'scissors1': 0.5, 'rock1': 0}
     };
     var yourScore = rpsDataBase[yourChoice][computerChoice];  
     var computerScore = rpsDataBase[computerChoice][yourChoice];
     return [yourScore, computerScore]; 
+    
 }
 
 function finalMessage([yourScore, computerScore]) {
@@ -43,7 +45,7 @@ function finalMessage([yourScore, computerScore]) {
     
 
 
-//storage of the images
+
 function rspFrontEnd(humanImageChoice, compImageChoice, finalMessage) {
     var imagesDataBase = {
         'rock1': document.getElementById('rock1').src,
@@ -59,8 +61,8 @@ function rspFrontEnd(humanImageChoice, compImageChoice, finalMessage) {
    var compDiv = document.createElement('div');
    var messageDiv = document.createElement('div');
    
-   /*after removing the images i want it to bring back only the images that the
-   user and computer has choose and also display the outcome*/
+   /*after removing the images I want it to bring back only the images that the
+   user and computer has chosen and also display the outcome*/
    humanDiv.innerHTML = "<img src='" + imagesDataBase[humanImageChoice] + "' height=150 width=150 style='box-shadow: 0px 10px 50px blue'>"
    messageDiv.innerHTML = "<h1 style='color: " + finalMessage['color'] + "; font-size: 60px; padding:30px; '>" + finalMessage['message'] + "</h1>" 
    compDiv.innerHTML = "<img src='" + imagesDataBase[compImageChoice] + "' height=150 width=150 style='box-shadow: 0px 10px 50px red'>"
